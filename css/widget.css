@@ -1,0 +1,39 @@
+#heart {
+	color:red;
+	animation:iconAnimate 1.33s ease-in-out infinite
+}
+@-moz-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
+@-webkit-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
+@-o-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
+@keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3837664 */
+  src: url('iconfont.woff2?t=1671802284178') format('woff2'),
+       url('iconfont.woff?t=1671802284178') format('woff'),
+       url('iconfont.ttf?t=1671802284178') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat:before {
+  content: "\e600";
+  color: #00bf03;
+  font-size: 22px;
+}
+
+.icon-QQ:before {
+  content: "\e611";
+  color: rgb(16,164,255);
+  font-size: 26px;
+}
+
+
+
+
