@@ -1,3 +1,12 @@
+#web_bg {
+  /* 背景图像的地址（url括号里）  */
+  background: url("https://raw.githubusercontent.com/GXY-123/pico/main/416612.jpg");
+  /* 背景图像不重复 */
+  background-repeat: no-repeat;
+  /* 背景图像大小 */
+  background-size: cover;
+}
+
 /* 文章页背景 */
 .layout_post>#post {
     /* 以下代表透明度为0.7 可以自行修改*/
@@ -11,7 +20,7 @@
 }
 /*侧边卡片的透明度 */
 :root {
-  --card-bg: rgba(255, 255, 255, .92);
+  --card-bg: rgba(255, 255, 255, .95);
 }
 /* 页脚透明 */
 #footer {
@@ -19,13 +28,5 @@
 	background: rgba(255,255,255, .0);
 }
  
-#web_bg {
-  /* 背景图像的地址（url括号里）  */
-  background: url("https://raw.githubusercontent.com/GXY-123/pico/main/416612.jpg");
-  /* 背景图像不重复 */
-  background-repeat: no-repeat;
-  /* 背景图像大小 */
-  background-size: cover;
-}
 
 

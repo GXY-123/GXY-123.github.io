@@ -1,5 +1,13 @@
+/*
+ * @Descripttion: 
+ * @version: 0.0.1
+ * @Author: GXY
+ * @Date: 2022-12-23 16:20:07
+ * @LastEditors: GXY
+ * @LastEditTime: 2022-12-24 15:05:15
+
 $(document).ready(function(e){
-        $('.framework-info').html('本站已运行<SPAN id=span_dt_dt style="color: #fff;"></SPAN>');
+        $('.footer_custom_text').html('本站已运行<SPAN id=span_dt_dt style="color: #fff;"></SPAN>');
     })
 
 function show_date_time(){
@@ -19,4 +27,10 @@ function show_date_time(){
     seconds=Math.floor((e_minsold-minsold)*60);
     span_dt_dt.innerHTML=' <font style=color:#2d85f0>'+daysold+'</font> 天 <font style=color:#f4433c>'+hrsold+'</font> 时 <font style=color:#ffbc32>'+minsold+'</font> 分 <font style=color:#0aa858>'+seconds+'</font> 秒';
     }
-	show_date_time();
+	show_date_time(); */
+
+var now = new Date(); 
+function createtime11() { 
+document.getElementsByClassName("mytex2t").innerHTML = "本站已安全运行 ";
+}
+createtime11();

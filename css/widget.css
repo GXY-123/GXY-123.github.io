@@ -7,6 +7,8 @@
 @-o-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
 @keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
 
+
+/********* 以下为阿里云图标库css设置 *******/
 @font-face {
   font-family: "iconfont"; /* Project id 3837664 */
   src: url('iconfont.woff2?t=1671802284178') format('woff2'),
@@ -34,6 +36,9 @@
   font-size: 26px;
 }
 
-
+.fa-github:before{
+	color: #8D4BBB;
+	font-size: 24px;
+}
 
 
