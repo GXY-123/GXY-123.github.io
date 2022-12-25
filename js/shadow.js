@@ -27,10 +27,33 @@ function show_date_time(){
     seconds=Math.floor((e_minsold-minsold)*60);
     span_dt_dt.innerHTML=' <font style=color:#2d85f0>'+daysold+'</font> 天 <font style=color:#f4433c>'+hrsold+'</font> 时 <font style=color:#ffbc32>'+minsold+'</font> 分 <font style=color:#0aa858>'+seconds+'</font> 秒';
     }
-	show_date_time(); */
+	show_date_time();
 
 var now = new Date(); 
 function createtime11() { 
 document.getElementsByClassName("mytex2t").innerHTML = "本站已安全运行 ";
 }
-createtime11();
+createtime11(); */
+
+'use strict';
+const cheerio = require('cheerio');
+
+/**
+ * 在页面插入新顶部图
+ * @param {cheerio.Root} $ Root
+ */
+function insertTopImg($) {
+    let header = $('#page-header');
+    if (header.length === 0) return;
+    let background = header.css('background-image');
+    if (!background) return;
+    $('#post, #page, #archive, #tag, #category').prepend(`<div class="top-img" style="background-image: ${background};"></div>`);
+}
+
+hexo.extend.filter.register('after_render:html', function(str, data) {
+    let $ = cheerio.load(str, {
+        decodeEntities: false
+    });
+    insertTopImg($);
+    return $.html();
+});
