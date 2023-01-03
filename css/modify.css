@@ -46,21 +46,21 @@
   filter: brightness(0.8);
 }
 #footer:before {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0);
 }
-[data-theme='dark'] #footer:before {
+[data-theme='white'] #footer:before {
   background-color: rgba(0,0,0,0.5);
 }
 #footer-wrap,
 #footer-wrap a {
-  color: #111;
+  color: #feffff;
   -webkit-transition: unset;
   -moz-transition: unset;
   -o-transition: unset;
   -ms-transition: unset;
   transition: unset;
 }
-[data-theme='dark'] #footer-wrap,
-[data-theme='dark'] #footer-wrap a {
-  color: var(--light-grey);
+[data-theme='white'] #footer-wrap,
+[data-theme='white'] #footer-wrap a {
+  color: var(--light-white);
 }
